@@ -1,0 +1,19 @@
+{
+  "name": "crear-repositorio-en-github-merquililycony",
+  "version": "1.0.0",
+  "description": "creando un token con la API de Github",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-merquililycony.git"
+  },
+  "author": "Merquis, Lily , Cony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-merquililycony/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-merquililycony#readme"
+}
