@@ -16,4 +16,17 @@
     "url": "https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-merquililycony/issues"
   },
   "homepage": "https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-merquililycony#readme"
+
+
+
+
+  "dependencies": {
+  "body-parser": "latest",
+  "cors": "2.7.1",
+  "express": "latest",
+  "jsonwebtoken": "0.4.0",
+  "jwt-simple": "^0.3.1",
+  "moment": "^2.10.6",
+  "mongoose": "4.2.4"
+}
 }
