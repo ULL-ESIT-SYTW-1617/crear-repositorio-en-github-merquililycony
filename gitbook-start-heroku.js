@@ -15,20 +15,30 @@ var curl = new Curl();
 var usuario = readlineSync.question('Introduzca el USUARIO de github: ');
 var password = readlineSync.question('Introduzca su contraseña de github: ', { hideEchoBack: true });
 
-// var args = " -u "+usuario+":"+password+" -d ";
-// var args1 = '\'{"scopes": ["repo", "user"], "note":"'+usuario+'"}\'';
-// var args2 = " https://api.github.com/authorizations >> "+usuario+".json";
-// var crear_token = args + args1 + args2;
-// exec('curl ' + crear_token);
+fe.mkdirs('.gitbook-start', function (err) {
+  if (err) return console.error(err)
+  console.log("success!")
+})
+
+var args = " -u "+usuario+":"+password+" -d ";
+var args1 = '\'{"scopes": ["repo", "user"], "note":"'+usuario+'"}\'';
+//var args2 = " https://api.github.com/authorizations >> "+usuario+".json";
+var args2 = " https://api.github.com/authorizations >> .gitbook-start/config.json";
+var crear_token = args + args1 + args2;
+exec('curl ' + crear_token);
 
 // //COGER TOKEN
-// var json = JSON.parse(fs.readFileSync(usuario+'.json','utf8'))
+ var json_token = JSON.parse(fs.readFileSync('.gitbook-start/config.json','utf8'))
+ var token = json_token.token;
+ console.log("Mi token es: "+token);
+
  var json = JSON.parse(fs.readFileSync('./package.json','utf8'));
  //json -I -f package.json -e 'this.repository.url="bebe"'
-dir = json.Directorio.nombre_dir;
+//var dir = json.Directorio.nombre_dir;
+var dir = json.nombre_dir; //Utilizar el que está comentado arriba cuando instalemos los paquetes.
+
 exec('json -I -f package.json -e \'this.repository.url=\"'+"https://github.com/"+usuario+"/"+dir+".git"+'\"\'');//URL REMOTA
 
-//console.log("Token usuario: "+token);
 
 
 //CREAR REPOSITORIO REMOTO EN GITHUB CON EL TOKEN

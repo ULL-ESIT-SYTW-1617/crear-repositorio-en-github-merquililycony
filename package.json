@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-merquililycony.git"
+    "url": "https://github.com/alu0100536690/Mybook.git"
   },
   "author": "Merquis Cruz, Constanza León, E. Liliana Camacho",
   "license": "ISC",
@@ -33,7 +33,7 @@
     "url": "https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-merquililycony/issues"
   },
   "homepage": "https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-merquililycony#readme",
-  "nombre_dir": " ",
+  "nombre_dir": "Mybook",
   "dependencies": {
     "asyncawait": "^1.0.6",
     "deasync": "^0.1.9",
