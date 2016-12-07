@@ -1,32 +1,55 @@
 {
-  "name": "crear-repositorio-en-github-merquililycony",
-  "version": "1.0.0",
-  "description": "creando un token con la API de Github",
-  "main": "config.js",
+  "name": "gitbook-start-heroku-merquililycony",
+  "version": "2.2.24",
+  "description": "Crea la carpeta undefined",
+  "main": "gitbook-start-heroku",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "^4.1.1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-merquililycony.git"
+    "url": "git+https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-merquililycony.git"
   },
-  "author": "Merquis, Lily , Cony",
+  "author": "Merquis Cruz, Constanza León, E. Liliana Camacho",
   "license": "ISC",
+  "contributors": [
+    {
+      "name": "Merquis",
+      "email": "alu0100536690@ull.edu.es"
+    },
+    {
+      "name": "Liliana",
+      "email": "alu0100762846@ull.edu.es"
+    },
+    {
+      "name": "Constanza",
+      "email": "alu0100673647@ull.edu.es"
+    }
+  ],
   "bugs": {
-    "url": "https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-merquililycony/issues"
+    "url": "https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-merquililycony/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-merquililycony#readme"
-
-
-
-
+  "homepage": "https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-merquililycony#readme",
+  "nombre_dir": " ",
   "dependencies": {
-  "body-parser": "latest",
-  "cors": "2.7.1",
-  "express": "latest",
-  "jsonwebtoken": "0.4.0",
-  "jwt-simple": "^0.3.1",
-  "moment": "^2.10.6",
-  "mongoose": "4.2.4"
-}
+    "asyncawait": "^1.0.6",
+    "deasync": "^0.1.9",
+    "exec": "^0.2.1",
+    "fs-extra": "^0.30.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-install": "^0.6.0",
+    "gulp-shell": "^0.5.2",
+    "heroku-client": "^3.0.0-beta3",
+    "minimist": "^1.2.0",
+    "node-libcurl": "^1.0.0",
+    "octonode": "^0.7.6",
+    "path": "^0.12.7",
+    "readline-sync": "^1.4.5",
+    "replace": "^0.3.0",
+    "simple-git": "^1.59.0"
+  }
 }
