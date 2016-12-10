@@ -1,0 +1,55 @@
+{
+  "id": 71033235,
+  "url": "https://api.github.com/authorizations/71033235",
+  "app": {
+    "name": "alu0100673647",
+    "url": "https://developer.github.com/v3/oauth_authorizations/",
+    "client_id": "00000000000000000000"
+  },
+  "token": "567c71fc7f8c320a41240a4c8f9210dccd872d42",
+  "hashed_token": "c2538c66cbb02704ee948690148faadf88e761c62b77fc5adc284744758bc2bc",
+  "token_last_eight": "cd872d42",
+  "note": "alu0100673647",
+  "note_url": null,
+  "created_at": "2016-12-10T18:16:10Z",
+  "updated_at": "2016-12-10T18:16:10Z",
+  "scopes": [
+    "repo",
+    "user"
+  ],
+  "fingerprint": null
+}
+{
+  "message": "Validation Failed",
+  "errors": [
+    {
+      "resource": "OauthAccess",
+      "code": "already_exists",
+      "field": "description"
+    }
+  ],
+  "documentation_url": "https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization"
+}
+{
+  "message": "Validation Failed",
+  "errors": [
+    {
+      "resource": "OauthAccess",
+      "code": "already_exists",
+      "field": "description"
+    }
+  ],
+  "documentation_url": "https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization"
+}
+{
+  "message": "Bad credentials",
+  "documentation_url": "https://developer.github.com/v3"
+}
+{
+  "message": "Bad credentials",
+  "documentation_url": "https://developer.github.com/v3"
+}
+{
+  "message": "Bad credentials",
+  "documentation_url": "https://developer.github.com/v3"
+}

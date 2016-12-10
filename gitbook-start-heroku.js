@@ -12,13 +12,17 @@ var Curl = require('node-libcurl').Curl;
 var curl = new Curl();
 
 
+
 var usuario = readlineSync.question('Introduzca el USUARIO de github: ');
 var password = readlineSync.question('Introduzca su contraseña de github: ', { hideEchoBack: true });
 
+ 
+    
+
 fe.mkdirs('.gitbook-start', function (err) {
   if (err) return console.error(err)
-  console.log("success!")
-})
+  console.log("success!");
+});
 
 var args = " -u "+usuario+":"+password+" -d ";
 var args1 = '\'{"scopes": ["repo", "user"], "note":"'+usuario+'"}\'';
