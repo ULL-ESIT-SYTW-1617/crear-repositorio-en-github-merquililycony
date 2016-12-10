@@ -52,6 +52,7 @@
     "path": "^0.12.7",
     "readline-sync": "^1.4.5",
     "replace": "^0.3.0",
-    "simple-git": "^1.59.0"
+    "simple-git": "^1.59.0",
+    "netrc": "^0.1.4"
   }
 }
