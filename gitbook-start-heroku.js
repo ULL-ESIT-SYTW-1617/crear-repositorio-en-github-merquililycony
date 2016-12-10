@@ -21,9 +21,25 @@ var usuario_heroku = readlineSync.question('Introduzca el USUARIO de Heroku: ');
     var tok = netrc.parse(a);
     var bar = JSON.stringify(tok);
     console.log(bar);
-   var json_token_h = JSON.parse(fs.readFileSync('./token-heroku.json','utf8'));
+    var jsonfile = require('jsonfile')
+ 
+    var file = './data.json'
+    
+ jsonfile.writeFileSync(file, bar)
+ //sed -i 's/\\//g' data.json
+ //sed -i 's/api.heroku.com/api/g' token-heroku.json
+ exec("sed -i 's/\\\\//g' data.json");
+ exec("sed -i 's/api.heroku.com/api/g' data.json");
+ exec("sed -i 's/\"{\"api/{\"api/g' data.json");
+ exec("sed -i 's/}}\"/}}/g' data.json");
 
-    console.log(json_token_h.api.heroku.com.password);
+
+  var json_token_h = JSON.parse(fs.readFileSync('./data.json','utf8'))
+
+//   var x = "api.heroku.com";
+//   console.log("X = "+x);
+var fu = json_token_h.api.login;
+    console.log("token es: "+fu);
 function checkDirectorySync(directory) {
   try {
     fs.statSync(directory);
