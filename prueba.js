@@ -16,12 +16,11 @@ var usuario_heroku = readlineSync.question('Introduzca el USUARIO de Heroku: ');
 var password_heroku = readlineSync.question('Introduzca su contraseña de Heroku: ', { hideEchoBack: true });
 
 
-    var fich = " ~/.netrc"
-     var v = ">> token-heroku.json"
+    var fich = "~/.netrc"
     
-    netrc([fich]);
+
     var hola = netrc.parse(fich);
-     exec('cat'+ hola +v);
+     console.log(hola);
     
 //  var json_token = JSON.parse(fs.readFileSync('./token-heroku.json','utf8'))
 //  var token = json_token.password;
