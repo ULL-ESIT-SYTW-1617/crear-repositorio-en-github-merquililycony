@@ -10,8 +10,20 @@ var deasync = require('deasync');
 var exec = deasync(cp.exec);
 var Curl = require('node-libcurl').Curl;
 var curl = new Curl();
+var netrc = require('netrc');
+
+var usuario_heroku = readlineSync.question('Introduzca el USUARIO de Heroku: ');
+    var password_heroku = readlineSync.question('Introduzca su contraseña de Heroku: ', { hideEchoBack: true });
 
 
+    var fich = " ~/.netrc";
+    var a = exec('cat' + fich);
+    var tok = netrc.parse(a);
+    var bar = JSON.stringify(tok);
+    console.log(bar);
+   var json_token_h = JSON.parse(fs.readFileSync('./token-heroku.json','utf8'));
+
+    console.log(json_token_h.api.heroku.com.password);
 function checkDirectorySync(directory) {
   try {
     fs.statSync(directory);
@@ -20,7 +32,7 @@ function checkDirectorySync(directory) {
 
     var usuario = readlineSync.question('Introduzca el USUARIO de github: ');
     var password = readlineSync.question('Introduzca su contraseña de github: ', { hideEchoBack: true });
-
+    
     fe.mkdirs('.gitbook-start', function (err) {
       if (err) return console.error(err)
       console.log("success!")
@@ -55,6 +67,7 @@ var dir = json.nombre_dir; //Utilizar el que está comentado arriba cuando insta
 
 exec('json -I -f package.json -e \'this.repository.url=\"'+"https://github.com/"+usuario_tok+"/"+dir+".git"+'\"\'');//URL REMOTA
 
+//exec('json -I -f package.json -e \'this.heroku.user=\"");//URL REMOTA
 
 
 //CREAR REPOSITORIO REMOTO EN GITHUB CON EL TOKEN
