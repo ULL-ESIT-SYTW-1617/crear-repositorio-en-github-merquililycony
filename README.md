@@ -9,7 +9,15 @@
 ##Instalación:
 
 ~~~
-    $ npm install -g gitbook-start-heroku-merquililycony
+npm install -g nueva-funcionalidad-para-el-paquete-npm-merquililycony
+gitbook-start -d <directorio>
+cd <directorio>
+npm install
+npm install --save gitbook-start-heroku-merquililycony
+gulp deploy
+gulp auth
+gulp push
+deploy-heroku
 ~~~
 
 ##Funcionamiento
