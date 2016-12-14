@@ -17,7 +17,7 @@ npm install --save gitbook-start-heroku-merquililycony
 gulp deploy
 gulp auth
 gulp push
-deploy-heroku
+gulp deploy-heroku
 ~~~
 
 ##Funcionamiento
