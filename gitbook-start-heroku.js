@@ -14,6 +14,7 @@ var curl = new Curl();
 var token_heroku = exec('heroku auth:token');
 token_heroku = token_heroku.split("\n").join("");//Elimina salto de carro del token
 //Generar json con app de heroku
+//Info de la api: https://devcenter.heroku.com/articles/platform-api-quickstart
 exec('curl -X POST https://api.heroku.com/apps -H \"Accept: application/vnd.heroku+json; version=3\" -H \"Authorization: Bearer '+token_heroku+"\" >> .gitbook-start/config_heroku.json");
 
 
