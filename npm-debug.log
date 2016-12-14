@@ -1,0 +1,132 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.8.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/Documentos/Sources/crear-repositorio-en-github-merquililycony',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/gitbook-start-heroku-merquililycony/2.3.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 info lifecycle gitbook-start-heroku-merquililycony@2.3.0~prepublish: gitbook-start-heroku-merquililycony@2.3.0
+11 silly lifecycle gitbook-start-heroku-merquililycony@2.3.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ubuntu/.npm/gitbook-start-heroku-merquililycony/2.3.0/package.tgz',
+12 verbose tar pack   '/home/ubuntu/Documentos/Sources/crear-repositorio-en-github-merquililycony' ]
+13 verbose tarball /home/ubuntu/.npm/gitbook-start-heroku-merquililycony/2.3.0/package.tgz
+14 verbose folder /home/ubuntu/Documentos/Sources/crear-repositorio-en-github-merquililycony
+15 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/gitbook-start-heroku-merquililycony/2.3.0/package.tgz
+16 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd gitbook-start-heroku-merquililycony@2.3.0
+18 verbose afterAdd /home/ubuntu/.npm/gitbook-start-heroku-merquililycony/2.3.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ubuntu/.npm/gitbook-start-heroku-merquililycony/2.3.0/package/package.json written
+21 silly publish { name: 'gitbook-start-heroku-merquililycony',
+21 silly publish   version: '2.3.0',
+21 silly publish   description: 'Crea la carpeta undefined',
+21 silly publish   main: 'gitbook-start-heroku',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   engines: { node: '^4.1.1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/alu0100673647/Mybook.git' },
+21 silly publish   author: { name: 'Merquis Cruz, Constanza León, E. Liliana Camacho' },
+21 silly publish   license: 'ISC',
+21 silly publish   contributors:
+21 silly publish    [ { name: 'Merquis', email: 'alu0100536690@ull.edu.es' },
+21 silly publish      { name: 'Liliana', email: 'alu0100762846@ull.edu.es' },
+21 silly publish      { name: 'Constanza', email: 'alu0100673647@ull.edu.es' } ],
+21 silly publish   bugs: { url: 'https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-merquililycony/issues' },
+21 silly publish   homepage: 'https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-merquililycony#readme',
+21 silly publish   nombre_dir: 'Mybook',
+21 silly publish   dependencies:
+21 silly publish    { asyncawait: '^1.0.6',
+21 silly publish      deasync: '^0.1.9',
+21 silly publish      exec: '^0.2.1',
+21 silly publish      'fs-extra': '^0.30.0',
+21 silly publish      gulp: '^3.9.1',
+21 silly publish      'gulp-cli': '^1.2.2',
+21 silly publish      'gulp-install': '^0.6.0',
+21 silly publish      'gulp-shell': '^0.5.2',
+21 silly publish      'heroku-client': '^3.0.0-beta3',
+21 silly publish      json: '^9.0.4',
+21 silly publish      jsonfile: '^2.4.0',
+21 silly publish      minimist: '^1.2.0',
+21 silly publish      'node-libcurl': '^1.0.0',
+21 silly publish      octonode: '^0.7.6',
+21 silly publish      path: '^0.12.7',
+21 silly publish      'readline-sync': '^1.4.5',
+21 silly publish      replace: '^0.3.0',
+21 silly publish      'simple-git': '^1.59.0',
+21 silly publish      netrc: '^0.1.4' },
+21 silly publish   readme: '# Práctica 4: Nueva funcionalidad para el paquete npm\n## Paquete: gitbook-start-herokuls-ull-es-merquililycony\n\n\n# Objetivo:\n*El objetivo de esta práctica es extender el package NodeJS publicado en npm en una práctica anterior con una nueva*\n*funcionalidad que permita que los usuarios realizar un despliegue automatico en el servidor de IAAS*\n\n##Instalación:\n\n~~~\n    $ npm install -g gitbook-start-heroku-merquililycony\n~~~\n\n##Funcionamiento\n\n\n## Enlaces :\n\n **Enlace al campus virtual**\n\n * [Enunciado](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaplugin2.html)\n\n **Repositorio GitHuB donde se realizó la práctica**\n * [Repo nueva funcionalidad](https://github.com/ULL-ESIT-SYTW-1617/nueva-funcionalidad-para-el-paquete-npm-plugins-merquililycony/)\n * [Repo paquete](https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-merquililycony/)\n * [Organización](https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-ull-es-merquililycony/)\n **Enlace a Gh-pages**\n\n * [gh-pages](https://ull-esit-sytw-1617.github.io/nueva-funcionalidad-para-el-paquete-npm-plugins-merquililycony/)\n\n * [npm](https://www.npmjs.com/package/gitbook-start-heroku-merquililycony)\n\n **Página de los autores**\n\n * [Constanza](http://alu0100673647.github.io)\n * [Merquis](http://merquis.github.io)\n * [Liliana](https://alu0100762846.github.io)\n\n\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '3b68d91e4d586e34d5a3a3b36ca35cb21a32bbb6',
+21 silly publish   _id: 'gitbook-start-heroku-merquililycony@2.3.0',
+21 silly publish   _shasum: '687020410cdd9b24786e3bc449bd96486692379d',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name gitbook-start-heroku-merquililycony
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'gitbook-start-heroku-merquililycony',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'gitbook-start-heroku-merquililycony',
+26 silly mapToRegistry   name: 'gitbook-start-heroku-merquililycony',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/gitbook-start-heroku-merquililycony
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/ubuntu/.npm/gitbook-start-heroku-merquililycony/2.3.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/gitbook-start-heroku-merquililycony
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 07:54:08
+33 verbose request using bearer token for auth
+34 verbose request id ea2fb56eb62ed6a7
+35 http request PUT https://registry.npmjs.org/gitbook-start-heroku-merquililycony
+36 http 403 https://registry.npmjs.org/gitbook-start-heroku-merquililycony
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 14 Dec 2016 07:54:10 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lcy1124-LCY',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1481702049.263047,VS0,VE1290',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /home/ubuntu/.npm/registry.npmjs.org/gitbook-start-heroku-merquililycony on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 2.3.0." : gitbook-start-heroku-merquililycony
+40 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid gitbook-start-heroku-merquililycony
+43 verbose cwd /home/ubuntu/Documentos/Sources/crear-repositorio-en-github-merquililycony
+44 error Linux 4.4.0-53-generic
+45 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+46 error node v6.8.0
+47 error npm  v3.10.8
+48 error code E403
+49 error "You cannot publish over the previously published version 2.3.0." : gitbook-start-heroku-merquililycony
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
