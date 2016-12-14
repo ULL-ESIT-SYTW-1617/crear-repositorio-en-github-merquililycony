@@ -10,36 +10,13 @@ var deasync = require('deasync');
 var exec = deasync(cp.exec);
 var Curl = require('node-libcurl').Curl;
 var curl = new Curl();
-var netrc = require('netrc');
 
-var usuario_heroku = readlineSync.question('Introduzca el USUARIO de Heroku: ');
-    var password_heroku = readlineSync.question('Introduzca su contraseña de Heroku: ', { hideEchoBack: true });
-
-
-    var fich = " ~/.netrc";
-    var a = exec('cat' + fich);
-    var tok = netrc.parse(a);
-    var bar = JSON.stringify(tok);
-    console.log(bar);
-    var jsonfile = require('jsonfile')
- 
-    var file = './data.json'
-    
- jsonfile.writeFileSync(file, bar)
- //sed -i 's/\\//g' data.json
- //sed -i 's/api.heroku.com/api/g' token-heroku.json
- exec("sed -i 's/\\\\//g' data.json");
- exec("sed -i 's/api.heroku.com/api/g' data.json");
- exec("sed -i 's/\"{\"api/{\"api/g' data.json");
- exec("sed -i 's/}}\"/}}/g' data.json");
+var token_heroku = exec('heroku auth:token');
+token_heroku = token_heroku.split("\n").join("");//Elimina salto de carro del token
+//Generar json con app de heroku
+exec('curl -X POST https://api.heroku.com/apps -H \"Accept: application/vnd.heroku+json; version=3\" -H \"Authorization: Bearer '+token_heroku+"\" >> .gitbook-start/config_heroku.json");
 
 
-  var json_token_h = JSON.parse(fs.readFileSync('./data.json','utf8'))
-
-//   var x = "api.heroku.com";
-//   console.log("X = "+x);
-var fu = json_token_h.api.login;
-    console.log("token es: "+fu);
 function checkDirectorySync(directory) {
   try {
     fs.statSync(directory);
@@ -48,7 +25,7 @@ function checkDirectorySync(directory) {
 
     var usuario = readlineSync.question('Introduzca el USUARIO de github: ');
     var password = readlineSync.question('Introduzca su contraseña de github: ', { hideEchoBack: true });
-    
+
     fe.mkdirs('.gitbook-start', function (err) {
       if (err) return console.error(err)
       console.log("success!")
